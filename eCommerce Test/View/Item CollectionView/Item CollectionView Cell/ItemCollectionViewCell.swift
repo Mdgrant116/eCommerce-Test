@@ -10,6 +10,14 @@ import UIKit
 
 class ItemCollectionViewCell: UICollectionViewCell {
 
+    var item: Item! {
+        
+        didSet {
+            
+            foodImage.image = UIImage(named: item.itemImageName)
+        }
+        
+    }
     @IBOutlet var priceLabel: UILabel!
     
     @IBOutlet var foodImage: UIImageView!
