@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ItemCollectionView: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ItemCollectionView: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, CartProtocol {
+    
     
     var item: Item!
     var items = ItemList().items
@@ -22,19 +23,27 @@ class ItemCollectionView: NSObject, UICollectionViewDataSource, UICollectionView
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Item", for: indexPath) as! ItemCollectionViewCell
         
-        item = items[indexPath.row]
-        cell.foodImage.image = UIImage(named: item.itemImageName)
-        cell.priceLabel.text = item.itemPrice
+        
+        cell.item = items[indexPath.row]
+        cell.delegate = self
+        
         
         return cell
     }
     
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         
         return CGSize(width: (collectionView.frame.width / 3.5), height: collectionView.frame.height)
         
     }
-  
-
+    
+    func addItemToCart(item: Item) {
+        
+        
+    }
+    
+    
+    
 }

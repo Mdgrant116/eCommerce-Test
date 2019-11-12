@@ -51,21 +51,29 @@
                                     <constraint firstAttribute="height" constant="2" id="ZwG-cv-w24"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAN-wU-V98">
+                                <rect key="frame" x="0.0" y="270" width="379" height="52"/>
+                                <color key="backgroundColor" red="0.34659779070000002" green="0.32526928189999998" blue="0.83875387909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="AIN-VG-Qr6"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based On Your Shopping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twZ-TD-nf2">
                                 <rect key="frame" x="15" y="287.5" width="164.5" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next Button" translatesAutoresizingMaskIntoConstraints="NO" id="7in-CL-Yt6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next Button" translatesAutoresizingMaskIntoConstraints="NO" id="7in-CL-Yt6">
                                 <rect key="frame" x="358" y="287" width="11" height="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="11" id="SSv-CC-PMb"/>
                                     <constraint firstAttribute="height" constant="17" id="Wfd-A2-aIr"/>
                                 </constraints>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hvg-v0-yOC">
-                                <rect key="frame" x="0.0" y="92" width="379" height="178"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hvg-v0-yOC">
+                                <rect key="frame" x="0.0" y="92" width="379" height="173"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="30" minimumInteritemSpacing="10" id="ctN-Oq-Dhl">
                                     <size key="itemSize" width="50" height="50"/>
@@ -81,12 +89,13 @@
                             <constraint firstItem="ySP-dO-4zN" firstAttribute="leading" secondItem="JSb-rr-ggT" secondAttribute="leading" constant="15" id="G11-at-Lmg"/>
                             <constraint firstAttribute="trailing" secondItem="9kf-5z-mJs" secondAttribute="trailing" constant="15" id="Hej-WX-Nuj"/>
                             <constraint firstAttribute="trailing" secondItem="iLg-Gk-2K4" secondAttribute="trailing" id="IUA-Zj-p8g"/>
+                            <constraint firstAttribute="trailing" secondItem="JAN-wU-V98" secondAttribute="trailing" id="JdV-G3-31k"/>
                             <constraint firstAttribute="bottom" secondItem="7in-CL-Yt6" secondAttribute="bottom" constant="18" id="KhS-LB-C37"/>
                             <constraint firstItem="twZ-TD-nf2" firstAttribute="leading" secondItem="JSb-rr-ggT" secondAttribute="leading" constant="15" id="Ky5-Gh-q8P"/>
                             <constraint firstItem="tqw-vd-gkv" firstAttribute="top" secondItem="iLg-Gk-2K4" secondAttribute="bottom" constant="11" id="Lwm-qf-d79"/>
                             <constraint firstItem="ySP-dO-4zN" firstAttribute="top" secondItem="tqw-vd-gkv" secondAttribute="bottom" constant="7" id="PtU-vK-tSf"/>
                             <constraint firstItem="tqw-vd-gkv" firstAttribute="leading" secondItem="JSb-rr-ggT" secondAttribute="leading" constant="15" id="The-zi-mhy"/>
-                            <constraint firstItem="NEe-Ni-Q9C" firstAttribute="top" secondItem="Hvg-v0-yOC" secondAttribute="bottom" id="Ziz-Oh-3Uf"/>
+                            <constraint firstItem="NEe-Ni-Q9C" firstAttribute="top" secondItem="Hvg-v0-yOC" secondAttribute="bottom" constant="5" id="Ziz-Oh-3Uf"/>
                             <constraint firstItem="iLg-Gk-2K4" firstAttribute="leading" secondItem="JSb-rr-ggT" secondAttribute="leading" id="cMm-Py-evI"/>
                             <constraint firstAttribute="bottom" secondItem="NEe-Ni-Q9C" secondAttribute="bottom" constant="50" id="eqa-l3-S8e"/>
                             <constraint firstAttribute="bottom" secondItem="twZ-TD-nf2" secondAttribute="bottom" constant="15" id="fXS-th-zTs"/>
@@ -97,6 +106,8 @@
                             <constraint firstItem="NEe-Ni-Q9C" firstAttribute="leading" secondItem="JSb-rr-ggT" secondAttribute="leading" id="nSG-Nr-jNo"/>
                             <constraint firstItem="9kf-5z-mJs" firstAttribute="top" secondItem="iLg-Gk-2K4" secondAttribute="bottom" constant="10" id="p2S-Gw-eIN"/>
                             <constraint firstItem="Hvg-v0-yOC" firstAttribute="leading" secondItem="JSb-rr-ggT" secondAttribute="leading" id="uox-QE-VlH"/>
+                            <constraint firstAttribute="bottom" secondItem="JAN-wU-V98" secondAttribute="bottom" id="wS5-K1-cj5"/>
+                            <constraint firstItem="JAN-wU-V98" firstAttribute="leading" secondItem="JSb-rr-ggT" secondAttribute="leading" id="zjT-pv-9vI"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -111,8 +122,11 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="379" height="322"/>
             <connections>
+                <outlet property="basedOnYourShoppingLabel" destination="tqw-vd-gkv" id="3Zg-ym-557"/>
+                <outlet property="bottomBorderView" destination="JAN-wU-V98" id="cgw-4B-QkC"/>
                 <outlet property="cellBackgroundView" destination="JSb-rr-ggT" id="vRr-Dm-aWh"/>
                 <outlet property="itemCollectionView" destination="Hvg-v0-yOC" id="dVt-pj-TRX"/>
+                <outlet property="topBorderView" destination="iLg-Gk-2K4" id="Y2k-Ws-HQ7"/>
             </connections>
             <point key="canvasLocation" x="376.08695652173918" y="243.75"/>
         </collectionViewCell>

@@ -21,6 +21,7 @@
 		4E2BB3402378CEBB00D3E4B8 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BB33F2378CEBB00D3E4B8 /* Readme.md */; };
 		4E8B52752379E9CB006626BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B52742379E9CB006626BB /* Item.swift */; };
 		4E8B52772379EAB8006626BB /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B52762379EAB8006626BB /* ItemList.swift */; };
+		4EC145DC237B06DF005B5641 /* Protocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC145DB237B06DF005B5641 /* Protocals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4E2BB33F2378CEBB00D3E4B8 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		4E8B52742379E9CB006626BB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4E8B52762379EAB8006626BB /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		4EC145DB237B06DF005B5641 /* Protocals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		4E2BB31A2378AC2900D3E4B8 /* eCommerce Test */ = {
 			isa = PBXGroup;
 			children = (
+				4EC145DA237B06C6005B5641 /* Helpers */,
 				4E8B52732379E9B2006626BB /* Model */,
 				4E8B52782379FA9C006626BB /* View */,
 				4E8B52792379FAA4006626BB /* Controller */,
@@ -163,6 +166,14 @@
 			path = "Item CollectionView";
 			sourceTree = "<group>";
 		};
+		4EC145DA237B06C6005B5641 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4EC145DB237B06DF005B5641 /* Protocals.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +255,7 @@
 				4E8B52772379EAB8006626BB /* ItemList.swift in Sources */,
 				4E8B52752379E9CB006626BB /* Item.swift in Sources */,
 				4E2BB31E2378AC2900D3E4B8 /* SceneDelegate.swift in Sources */,
+				4EC145DC237B06DF005B5641 /* Protocals.swift in Sources */,
 				4E2BB3322378ADBB00D3E4B8 /* MainCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

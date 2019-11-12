@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     
     @IBOutlet var mainCollectionView: UICollectionView!
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         mainCollectionView.layer.cornerRadius = 6
     }
-
+    
 }
 
 
@@ -45,15 +45,12 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: "Main", for: indexPath) as! MainCollectionViewCell
-        cell.layer.cornerRadius = 6
-        cell.layer.masksToBounds = true
+        let colorArray: [UIColor] = [.systemIndigo, .systemOrange, .systemRed, .systemTeal, .systemYellow  ]
         
-        cell.layer.shadowColor = UIColor.gray.cgColor
-        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.layer.shadowRadius = 2.0
-        cell.layer.shadowOpacity = 1.0
-        cell.layer.masksToBounds = false
-        cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
+        cell.topBorderView.backgroundColor = colorArray[indexPath.row]
+        cell.bottomBorderView.backgroundColor = colorArray[indexPath.row]
+        cell.basedOnYourShoppingLabel.textColor = colorArray[indexPath.row]
+        
         return cell
         
     }

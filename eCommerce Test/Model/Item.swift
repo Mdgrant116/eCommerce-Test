@@ -12,14 +12,16 @@ struct Item {
     
     let itemImageName: String
     let itemPrice: String
+    var inCart: Bool
     
-
-    init(image: String, price: String) {
-           itemImageName = image
-           itemPrice = price
+    init(image: String, price: String, inCart: Bool) {
+        
+        itemImageName = image
+        itemPrice = price
+        self.inCart = inCart
+    }
 }
-}
 
 
-    
+
 
